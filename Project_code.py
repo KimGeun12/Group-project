@@ -1,33 +1,36 @@
 import cv2
 import numpy as np
 
-image_path = 'C:\\Users\\User\\Desktop\\image\\image.jpg'
-image = cv2.imread(image_path)
+def combine_blurred_and_contoured(image_path, blur_amount=(25, 25), canny_threshold1=50, canny_threshold2=100):
+    # Load the image
+    image = cv2.imread(image_path)
+    
+    # Convert to grayscale
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    
+    # Apply Gaussian blur
+    blurred = cv2.GaussianBlur(gray, blur_amount, 0)
+    
+    # Find edges using Canny
+    edges = cv2.Canny(blurred, canny_threshold1, canny_threshold2)
+    
+    # Find contours
+    contours, _ = cv2.findContours(edges, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    
+    # Draw contours on a copy of the blurred image
+    contoured_image = cv2.cvtColor(blurred, cv2.COLOR_GRAY2BGR)
+    cv2.drawContours(contoured_image, contours, -1, (255, 0, 0), 3) 
+    
+    # Combine the images side by side
+    combined = np.hstack((image, cv2.cvtColor(blurred, cv2.COLOR_GRAY2BGR), contoured_image))
+    
+    return combined
 
-if image is None:
-    print("Error: 이미지를 불러오는 데 실패했습니다. 경로를 확인해 주세요.")
-else:
-    # Flip the image horizontally
-    flipped_image = cv2.flip(image, 1)
+image_path = 'C://Users//User//Desktop//image//image.jpg'
 
-    # Convert to grayscale and apply edge detection
-    gray = cv2.cvtColor(flipped_image, cv2.COLOR_BGR2GRAY)
-    edges = cv2.Canny(gray, 100, 200)
+combined_image = combine_blurred_and_contoured(image_path)
 
-    # Find contours from the edges
-    contours, hierarchy = cv2.findContours(edges, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+combined_image_path = 'C://Users//User//Desktop//combined_image.jpg'
+cv2.imwrite(combined_image_path, combined_image)
 
-    # Create an image to draw thick contours
-    contour_image = np.zeros_like(flipped_image)
-
-    # Draw the contours on the image with a certain thickness
-    cv2.drawContours(contour_image, contours, -1, (255, 255, 255), thickness=3)
-
-    # Save the result
-    contour_image_path = 'C:\\Users\\User\\Desktop\\image\\contour_image.jpg'
-    success = cv2.imwrite(contour_image_path, contour_image)
-
-    if success:
-        print("도형의 두꺼운 테두리가 그려진 이미지가 저장되었습니다:", contour_image_path)
-    else:
-        print("이미지 저장에 실패했습니다. 다시 시도해 주세요.")
+print("Image saved at:", combined_image_path)
