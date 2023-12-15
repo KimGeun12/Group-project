@@ -14,7 +14,7 @@ openCV의 가장 기초적인 이미지 전처리와 도형 그리기 기능을 
 import cv2
 import numpy as np
 ```
-OpenCV 라이브러리 (cv2): 이미지 처리를 위해 사용됨
+OpenCV 라이브러리 (cv2): 이미지 처리를 위해 사용됨  
 NumPy 라이브러리 (np): 숫자 연산에 사용됨
 
 ## (2) 함수 정의
@@ -22,7 +22,7 @@ NumPy 라이브러리 (np): 숫자 연산에 사용됨
 ```python
 def combine_blurred_and_contoured(image_path, blur_amount=(25, 25), canny_threshold1=50,canny_threshold2=100):
 ```
-이미지 파일 경로 (image_path)를 받음
+이미지 파일 경로 (image_path)를 받음  
 블러 (blur_amount) 및 프레임 감지 임계값 (canny_threshold1 및 canny_threshold2)을 설정
 
 ## (3) 이미지 로드 및 변환
@@ -39,7 +39,7 @@ gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 blurred = cv2.GaussianBlur(gray, blur_amount, 0)
 edges = cv2.Canny(blurred, canny_threshold1, canny_threshold2)
 ```
-그레이스케일 이미지에 블러 적용
+그레이스케일 이미지에 블러 적용  
 Canny 프레임 검출을 사용하여 블러된 이미지에서 프레임을 식별
 
 ## (5) 등고선 찾기 및 블러처리된 이미지에 그리기
@@ -76,7 +76,7 @@ cv2.imwrite(combined_image_path, combined)
 - numpy(1.24.4)  
 
 ## 4. 실행방법:
-원본이미지(가천대로고)를 다운로드 한 뒤, 코드에 해당 이미지 파일의 경로를 정확하게 작성 후 visual studio code에서 프로그램 실행
+원본이미지(가천대로고)를 다운로드 한 뒤, 코드에 해당 이미지 파일의 경로와 다운로드 받을 경로를 정확하게 작성 후 visual studio code에서 프로그램 실행
 
 ## 5. 참고자료 및 출처
 - https://www.youtube.com/watch?v=lelVripbt2M
