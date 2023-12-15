@@ -57,4 +57,4 @@ cv2.imwrite(combined_image_path, combined)
 
 ![Example01_image_result.jpg](https://github.com/KimGeun12/TermProject-BlurFrameSketcher/blob/main/Example01_image_result.jpg)
 
-![Example01_image_result.jpg](https://github.com/KimGeun12/TermProject-BlurFrameSketcher/blob/main/Example01_image_result.jpg)
+![Example01_image_result.jpg](https://github.com/KimGeun12/TermProject-BlurFrameSketcher/blob/main/Project_image.jpg)
