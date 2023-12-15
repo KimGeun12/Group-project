@@ -61,10 +61,13 @@ cv2.imwrite(combined_image_path, combined)
 
 ## 결과
 
+#### 원본
 <img src="https://github.com/KimGeun12/TermProject-BlurFrameSketcher/blob/main/image.jpg" width="500" height="500"/>
 
+#### 블러처리 
 ![블러처리](https://github.com/KimGeun12/TermProject-BlurFrameSketcher/blob/main/Example01_image_result.jpg)
 
+#### 그레이스케일 변환 및 프레임 검출출
 ![그레이스케일 변환 및 프레임 검출](https://github.com/KimGeun12/TermProject-BlurFrameSketcher/blob/main/Project_image.jpg)
 
 ## 3.사용 패키지: 
