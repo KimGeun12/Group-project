@@ -61,7 +61,7 @@ cv2.imwrite(combined_image_path, combined)
 
 ## 결과
 
-![원본](https://github.com/KimGeun12/TermProject-BlurFrameSketcher/blob/main/Example01_image_result.jpg))
+![원본](https://github.com/KimGeun12/TermProject-BlurFrameSketcher/blob/main/image.jpg)
 
 ![블러처리](https://github.com/KimGeun12/TermProject-BlurFrameSketcher/blob/main/Example01_image_result.jpg)
 
