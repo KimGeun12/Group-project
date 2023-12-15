@@ -1,9 +1,9 @@
 # 프로젝트 이름: BlurFrameSketcher
 
 ## 1.프로젝트 개요:  
-openCV의 가장 기초적인 이미지 전처리와 도형 그리기 기능을 활용하여 원본 이미지를 블러 처리한 후, 블러 처리된 이미지에서 테두리를 찾아 그려내도록 하는 프로그램 제작
-프로그램 실행 과정(순서): 원본 이미지 불러오기-> 원본 이미지 블러 처리 -> 블러 처리된 이미지의 그림 위에 테두리를 그려냄 -> 3가지 이미지 파일 동시에 출력
-Example코드와 결과사진이 있는 이유: 해당 Example01, 02의 코드와 결과는 각각 이미지 블러처리, 도형 그리기에 사용되는 코드로, 최종프로젝트 코드에 활용되어질 코드와 결과들이라는 의미
+openCV의 가장 기초적인 이미지 전처리와 도형 그리기 기능을 활용하여 원본 이미지를 블러 처리한 후, 블러 처리된 이미지에서 테두리를 찾아 그려내도록 하는 프로그램 제작  
+- 프로그램 실행 과정(순서): 원본 이미지 불러오기-> 원본 이미지 블러 처리 -> 블러 처리된 이미지의 그림 위에 테두리를 그려냄 -> 3가지 이미지 파일 동시에 출력
+- Example코드와 결과사진이 있는 이유: 해당 Example01, 02의 코드와 결과는 각각 이미지 블러처리, 도형 그리기에 사용되는 코드로, 최종프로젝트 코드에 활용되어질 코드와 결과들이라는 의미
 
 
 # 2.BlurFrameSketcher 코드 설명 및 결과
@@ -71,13 +71,15 @@ cv2.imwrite(combined_image_path, combined)
 ![그레이스케일 변환 및 프레임 검출](https://github.com/KimGeun12/TermProject-BlurFrameSketcher/blob/main/Project_image.jpg)
 
 ## 3.사용 패키지: 
-사용 패키지: opencv(4.8.1), pyhon(3.11.5), numpy(1.24.4)
+- opencv(4.8.1)  
+- pyhon(3.11.5)  
+- numpy(1.24.4)  
 
 ## 4.실행방법:
 원본이미지(가천대로고)를 다운로드 한 뒤, 코드에 해당 이미지 파일의 경로를 정확하게 작성 후 visual studio code에서 프로그램 실행
 
 ## 5.참고자료
-https://www.youtube.com/watch?v=lelVripbt2M 
-<br> https://github.com/jIdle/GaussianBlur-CUDA 
-<br> https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html 
-<br> https://docs.opencv.org/4.x/dc/da5/tutorial_py_drawing_functions.html
+- https://www.youtube.com/watch?v=lelVripbt2M 
+- <br> https://github.com/jIdle/GaussianBlur-CUDA 
+- <br> https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html 
+- <br> https://docs.opencv.org/4.x/dc/da5/tutorial_py_drawing_functions.html
