@@ -73,7 +73,7 @@ cv2.imwrite(combined_image_path, combined)
 원본이미지(가천대로고)를 다운로드 한 뒤, 코드에 해당 이미지 파일의 경로를 정확하게 작성 후 visual studio code에서 프로그램 실행
 
 ## 5.참고자료
-https://www.youtube.com/watch?v=lelVripbt2M
+https://www.youtube.com/watch?v=lelVripbt2M 
 https://github.com/jIdle/GaussianBlur-CUDA
 https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html
 https://docs.opencv.org/4.x/dc/da5/tutorial_py_drawing_functions.html
