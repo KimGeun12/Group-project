@@ -32,7 +32,7 @@ blurred = cv2.GaussianBlur(gray, blur_amount, 0)
 edges = cv2.Canny(blurred, canny_threshold1, canny_threshold2)
 ```
 그레이스케일 이미지에 블러 적용
-Canny 프레임 검출을 사용하여 블러된 이미지에서 프레임을을 식별
+Canny 프레임 검출을 사용하여 블러된 이미지에서 프레임을 식별
 
 ## 5. 등고선 찾기 및 블러처리된 이미지에 그리기
 
@@ -49,7 +49,7 @@ combined = np.hstack((image, cv2.cvtColor(blurred, cv2.COLOR_GRAY2BGR), contoure
 combined_image_path = 'C://Users//User//Desktop//combined_image.jpg'
 cv2.imwrite(combined_image_path, combined)
 ```
-원본 이미지, 블러된 이미지 및 등고선합
+원본 이미지, 블러된 이미지 및 등고선 결합 
 
 # 결과
 
