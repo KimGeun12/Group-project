@@ -81,5 +81,5 @@ cv2.imwrite(combined_image_path, combined)
 ## 5.참고자료
 - https://www.youtube.com/watch?v=lelVripbt2M 
 - <br> https://github.com/jIdle/GaussianBlur-CUDA 
-- <br> https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html 
+- <br> https://learnopencv.com/contour-detection-using-opencv-python-c/
 - <br> https://docs.opencv.org/4.x/dc/da5/tutorial_py_drawing_functions.html
