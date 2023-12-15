@@ -79,7 +79,7 @@ cv2.imwrite(combined_image_path, combined)
 원본이미지(가천대로고)를 다운로드 한 뒤, 코드에 해당 이미지 파일의 경로를 정확하게 작성 후 visual studio code에서 프로그램 실행
 
 ## 5. 참고자료 및 출처
-- https://www.youtube.com/watch?v=lelVripbt2M 
-- <br> https://github.com/jIdle/GaussianBlur-CUDA
-- <br> https://docs.opencv.org/4.x/dc/da5/tutorial_py_drawing_functions.html
-- <br> https://learnopencv.com/contour-detection-using-opencv-python-c/  
+- https://www.youtube.com/watch?v=lelVripbt2M
+- https://github.com/jIdle/GaussianBlur-CUDA
+- https://docs.opencv.org/4.x/dc/da5/tutorial_py_drawing_functions.html
+- https://learnopencv.com/contour-detection-using-opencv-python-c/
