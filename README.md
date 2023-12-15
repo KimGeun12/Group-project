@@ -59,7 +59,7 @@ cv2.imwrite(combined_image_path, combined)
 ```
 원본 이미지, 블러된 이미지 및 등고선 결합 
 
-# 결과
+## 결과
 
 
 ![Example01_image_result.jpg](https://github.com/KimGeun12/TermProject-BlurFrameSketcher/blob/main/Example01_image_result.jpg)
